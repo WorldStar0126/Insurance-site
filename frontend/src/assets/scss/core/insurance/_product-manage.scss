@@ -1,0 +1,471 @@
+.main-manage-content{
+    padding-top: 1rem;
+
+    .nk-quick-nav-icon:hover, .nk-quick-nav-icon:link{
+        padding: 0;
+        &::before{
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+        }
+        button{
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .toggle-expand-content{
+        button {
+            margin-right: 0;
+            padding: 0.2rem;    
+        }
+        em{
+            width: unset;
+        }
+        .dropdown{
+            display: flex;
+            align-items: center;
+        }
+        span{
+            padding-left: 0;
+        }
+    }
+    .submain-collapse{
+        display: flex;
+        align-items: center;
+        color: black;
+        font-size: 1rem;
+        .icon::before{
+            padding-right: 1rem;
+            font-size: 1.4rem;
+        }
+        .product-cnt{
+            padding-left: 1rem;
+            color: gray;
+            span{
+                padding-left: 0.3rem;
+            }
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .product-data-table{
+        padding: 2rem;
+    }
+    .prodcut-table{
+        border: 1px solid $border-color;
+    }
+
+    table{
+        button{
+            border: none;
+            outline: none;
+            box-shadow: none;
+            &:focus{
+                border: none;
+                outline: none;
+                box-shadow: none;
+            }
+            &:hover{
+                color: $accent-500;
+            }
+        }
+        .tb-tnx-head{
+            .more-detail{
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 3rem;
+            }
+        }
+        .link-list-opt{
+            a{
+                display: flex;
+            }
+            span{
+                text-transform: capitalize; 
+            }
+        }
+        .checkall{
+            position: relative;
+            margin: auto;
+        }
+    }
+    .table-tranx{
+        width: unset;
+        margin: 2rem;
+        border: 1px solid $border-color;
+        .checkbox-filed{
+            width: 5%;
+            .tb-tnx-desc{
+                display: flex;
+                align-items: center;
+            }
+            .form-check-input{
+                margin-left: 0;
+            }
+        }
+        .tb-tnx-amount{
+            width: unset;
+        }
+        button{
+            color: $accent-color;
+        }
+        th, td{
+            padding: 0.5rem 2rem; 
+        }
+        th{
+            padding: 1rem 2rem;
+            font-size: 0.8rem;
+        }
+    }
+    .product-data-table{
+        .g-2.row{
+            justify-content: flex-end !important;
+        }
+        [id*="cell-6-"]{
+            display: flex;
+            justify-content: center;
+        }
+        [id*="cell-4-"]{
+            div{
+                padding: 0.4rem 0.7rem;
+                background-color: $lighter;
+                border-radius: 30%;
+            }
+        }
+        a button{
+            color: $accent-color !important;
+            &:hover{
+                color: $accent-500 !important;
+            }
+        }
+    }
+    .mana-product{
+        .is-alter label{
+            min-width: 7rem;
+        }
+    }
+
+    .manage-content{
+        border: 1px solid $border-color;
+        background-color: white;
+        .card-bordered{
+            padding: 2rem;
+            border: 1px solid $border-color;
+        }
+        .btn-icon{
+            padding: 0.1rem 0.3rem;
+        }
+        .btn-icon + .btn-icon{
+           border-radius: 0;
+           border-left: 1px solid $accent-color;
+        }
+        table{
+            height: 19rem;
+            overflow-y: scroll;
+            thead{
+                position: sticky;
+                top: 0;
+                z-index: 1;
+            }
+        }
+    }
+    .item-name{
+            height: 2.5rem;
+        }
+    .mana-item{
+        .form-control-wrap{
+            width: fit-content;
+        }
+        .invalid{
+            margin-right: 1rem;
+        }
+        .form-control-select{
+            width: 9rem;
+        }
+    }
+    .mana-item + .mana-item{
+        margin-top: 2rem;
+    }
+
+    .manage-product-collapse{
+        padding-top: 2rem;
+    }
+    .product-edit{
+        .subcat-desc{
+            padding: 0.4rem 0.7rem;
+            background-color: $lighter;
+            border-radius: 30%;
+        }
+    }
+    .mana-category-collapse, .mana-product-collapse{
+        background-color: $blue !important;
+    }
+    .manage-collapse{
+        position: relative;
+        display: flex;
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+        color: white;
+        background-color: $accent-color;
+        border-radius: 5px 5px 0 0;
+
+        .ni{
+            position: absolute;
+            left: 25%;
+            width: 1.3rem;
+            height: 1.3rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10%;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+        .count{
+            display: inline;
+            margin-left: auto;
+            span{
+                margin-left: 0.5rem;
+            }
+        }
+    }
+
+    //company edit
+    
+    .item-name{
+        width: 15rem;
+        padding: 0 1rem;
+        margin: 0 1rem;
+    }
+
+    .form-label-group{
+        margin-bottom: 0;
+    }
+    label{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        margin-right: 0.5rem;
+    }
+    label .red{
+            color: red;
+    }
+    .form-group button{
+        padding: 0.4rem 1rem;
+    }
+    .btn-group{
+        display: flex;
+        justify-content: flex-end;
+   }
+
+
+    .sub-group{
+        justify-content: space-between;
+        align-items: center;
+        .form-control-lg{
+            width: 9rem;
+            height: 2.5rem;
+            padding: 0 1rem;
+            margin: 0px 0rem;
+        }
+    }
+
+    .mana-policy{
+        .form-label{
+            padding-right: 2rem;
+        }
+        .form-control-select::after{
+            display: none;
+        }
+        .table-tranx .item-name{
+            width: 7rem;
+        }
+        .table-tranx .item-cnt{
+            width: 4rem;
+        }
+        .ni-trash{
+            padding: 0.2rem;
+            font-size: 1rem;
+        }
+        .plus{
+            padding: 0.2rem;
+            font-size: 2rem;
+        }
+        .form-group{
+            margin-left: 2rem;
+        }
+    }
+
+    .dropdown-menu {
+        max-width: 25rem;
+        input, select{
+            margin-top: 1rem !important;
+        }
+        .react-select__value-container{
+            height: 2.6rem;
+        }
+    }
+    .dropdown-head{
+        font-size: 1rem;
+        font-weight: bold;
+        .btn{
+            padding: 0;
+            &::before{
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .dropdown-body{
+        margin: 2rem;
+        input{
+            width: 100%;
+        }
+        .item-name{
+            margin: 0;
+        }
+
+        label{
+            font-size: 0.9rem;
+            flex-wrap: nowrap;
+        }
+        .type-amount{
+            justify-content: space-between;
+            input{
+                width: 90%;
+            }
+        }
+        button{
+            display: flex;
+            margin-left: auto;
+        }
+    }
+}
+
+.modal-dialog{
+    .modal-header{
+        button:focus{
+            border: none;
+            outline: none;
+        }
+    }
+    .modal-body{
+        .policy-info{
+            display: flex;
+            justify-content: center;
+        }
+
+        .view-product-table{
+            width: 90%;
+            margin: auto;
+            padding-top: 3rem;
+            [id*="cell-6-"]{
+                display: flex;
+                justify-content: center;
+            }
+            [id*="cell-4-"]{
+                div{
+                    padding: 0.4rem 0.7rem;
+                    background-color: $lighter;
+                    border-radius: 30%;
+                }
+            }
+        }
+    }
+    .is-alter{
+        display: flex;
+        justify-content: center;
+        width: 50rem;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+    }
+    .sub-group{
+        width: 100%;
+        padding: 1rem;
+        width: 100%;
+        flex-wrap: wrap;
+        label{
+            white-space: nowrap;
+            min-width: 12rem;
+        }
+        .sub-form {
+            justify-content: space-between;
+        }
+        .text-form-wrap{
+            width: 100% !important;
+        }
+        .form-control-wrap{
+            justify-content: space-between;
+            margin-left: auto;
+        }
+        input, .form-control-wrap{
+            width: 75%;
+        }
+        button{
+            display: flex;
+            margin-left: auto;
+        }
+    }
+    .form-check-input{
+        position: relative;
+        margin-left: 1rem;
+        margin-top: 0;
+    }
+    table td{
+        padding: 0.6rem 0; 
+        button{
+            font-size: 0.7rem;
+            color: $accent-color;
+            padding: 0 0.2rem !important;
+            border-radius: 0;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+            &:hover{
+                color: $accent-500;
+            }
+        }
+        button + button{
+            border-left: 1px solid $accent-color;
+        }
+    }
+    table .btn-group{
+        display: table-cell;
+    }
+    
+}
+
+.checkbox-filed{
+    position: relative;
+}
+
+@media only screen and (max-width:820px){
+    .card-bordered{
+        padding: 1rem !important;
+    }
+    .manage-collapse{
+        padding: 0.5rem !important;
+        font-size: 0.8rem !important;
+    }
+    .item-status{
+        display: none !important;
+    }
+    .sub-group{
+        display: block !important;
+    }
+    .sub-group + .sub-group{
+        margin-top: 1rem;
+    }
+}
+@media only screen and (max-width:400px){
+    .manage-collapse{
+        padding: 0.3rem !important;
+        font-size: 0.6rem !important;
+    }
+}

@@ -1,0 +1,353 @@
+.contact-manage-content {
+
+
+    .submain-collapse{
+        display: flex;
+        align-items: center;
+        color: black;
+        font-size: 1rem;
+        .icon::before{
+            padding-right: 1rem;
+            font-size: 1.4rem;
+        }
+        .product-cnt{
+            padding-left: 1rem;
+            color: gray;
+            span{
+                padding-left: 0.3rem;
+            }
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .payment-table{
+        padding: 2rem;
+        background-color: white;
+        border: 1px solid $border-color;
+        th, td{
+            .tb-odr-id{
+                font-weight: bold !important;
+            }
+        }
+        .tb-odr-action{
+            display: flex;
+            justify-content: flex-start;
+        }
+        .icon{
+            display: flex;
+            justify-content: center;
+        }
+        .ni-check-circle::before{
+            font-size: 1.5rem;
+            color: $accent-500;
+        }
+        .ni-cross-circle::before{
+            font-size: 1.5rem;
+            color: $red;
+        }
+        .rdt_TableCol .rdt_TableCol_Sortable {
+          justify-content: center!important;
+        }
+        .rdt_TableCell {
+          justify-content: center!important;
+        }
+        .rdt_TableCol_Sortable {
+          overflow: unset!important;
+        }
+    }
+}
+
+.contact-main{
+ .contact-content{
+    margin-top: 1rem;
+    padding: 2rem;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+ }
+ .btn-group{
+    justify-content: flex-end;
+    button{
+        margin-left: 1rem;
+    }
+  }
+ .main-contact-info{
+    .form-label{
+        width: 8rem;
+        max-width: 8rem;
+      }
+    .form-control-select, .react-datepicker-wrapper{
+        margin: 0 1rem;
+    }
+    .custom-radio{
+        padding-left: 2.6rem;
+    }
+    .personal-info{
+        flex-wrap: wrap;
+        .form-group{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            input {
+                width: 15rem;
+            }
+            .form-control-select, .date-picker{
+                width: 15rem;
+                height: 2.5rem;
+            }
+            .date-picker .form-icon-left{
+                top: 2px;
+            }
+        }
+        .form-group:nth-child(even){
+            display: flex;
+            justify-content: flex-end;
+        }
+        .react-datepicker-wrapper{
+            padding: 0 1rem;
+            margin: 0;
+        }
+    }
+ }
+ .contact-address-info{
+    .contact-address-detail{
+        .address-group{
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .circuit-form{
+            justify-content: flex-start !important;
+        }
+        
+        label{
+            width: 9rem;
+        }
+        .form-control-select{
+            padding-left: 1rem;
+        }
+        .form-group{
+            width: 50%;
+        }
+        .postal-head{
+            .sameasphysical{
+                margin-left: 10%;
+            }
+            label{
+                width: unset;
+            }
+        }
+        .communi-mode{
+            label{
+                width: unset;
+                min-width: unset;
+                white-space: nowrap;
+            }
+            .check-label{
+                
+                margin-left: 0.5rem;
+            }
+        }
+    }
+    
+ }
+ .contact-physical-address{
+    border-bottom: 2px solid $accent-color;
+}
+.contact-upload-identify{
+    .upload-top{
+        border-bottom: 2px solid $accent-color;
+    }
+    .zoom-btn{
+        height: fit-content;
+        padding: 0.3rem 0.5rem;
+        background-color: $light-100;
+    }
+    .user-image-upload{
+        justify-content: center;
+        .custom-file{
+            width: 50%;
+            margin-left: 1rem;
+        }
+    }
+    .upload-bottom{
+        label{
+            white-space: nowrap;
+        }
+        .form-control-select{
+            select{
+                height: 2.625rem;
+                width: 8rem;
+            }
+        }
+        .upload-line{
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+            margin-bottom: 0.2rem;
+            border: 1px solid $border-color;
+            border-radius: 5px;
+            .form-group{
+                margin: 0;
+            }
+            .custom-radio{
+                display: flex;
+                align-items: center;
+                padding-left: 0;
+                min-height: unset;
+                .custom-control-label::before, .custom-control-label::after{
+                    left: 0;
+                    top: -9px;
+                }
+            }
+        }
+    }
+}
+ .dropFiles-info{
+    width: 85%;
+    margin: 2rem auto;
+    box-shadow: 0px 1px 3px 0px rgba($black, 0.4);
+    .dz-message{
+        .dz-upload-icon::before{
+            font-size: 5rem;
+        }
+        .dz-message-text{
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: gray;
+        }
+        .dz-message-subtext, .dz-message-or{
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        button{
+            color: $accent-color;
+        }
+    }
+    .btn-upload{
+        display: flex;
+        margin-top: 1rem;
+        margin-left: auto;
+    }
+ }
+ .drop-info-btngroup{
+    display: flex;
+    justify-content: flex-end;
+    button{
+        margin-left: 1rem;
+    }
+ }
+ .preview-contact-info{
+    .left-side{
+        img{
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+        }
+        
+        .info-detail{
+            margin-left: 1rem;
+            p{
+                margin-bottom: 0.5rem;
+            }
+            .username{
+                font-weight: bold;
+            }
+        }
+        .createon, .submiton{
+            margin-bottom: 0;
+            margin-top: 0.5rem;
+            font-weight: bold;
+        }
+        .userInfo{
+            padding-bottom: 2rem;
+            border-bottom: 2px solid $border-color;
+        }
+    }
+    .info-group{
+        padding-left: 2rem;
+        .info-part{
+            padding: 1rem 2rem;
+            border: 1px solid $border-color;
+            background-color: #f3f4f6;
+            border-radius: 10px;
+            box-shadow: 0px 1px 3px 0px rgba($black, 0.4);
+        }
+        .info-part + .info-part{
+            margin-top: 2rem;
+        }
+        .info-top{
+            margin-bottom: 0.5rem;
+        }
+        .kyc-info{
+            .txt{
+                min-width: 9rem;
+            }
+            .approve-status{
+                font-size: 1rem;
+                font-weight: bold;
+                color: $accent-500;
+            }
+        }
+        
+        .item{
+            p{
+                margin-bottom: 0.5rem;
+            }
+            .txt{
+                font-weight: bold;
+            }
+        }
+        .item + .item{
+            margin-top: 1rem;
+        }
+        .btn-group{
+            margin-top: 2rem;
+            button{
+                margin-left: 1rem;
+            }
+        }
+    }
+    
+ }
+ .contactlist-table{
+    padding: 2rem;
+    label{
+        min-width: unset;
+    }
+    [id*="cell-6-"]{
+        display: flex;
+        justify-content: center;
+    }
+}
+ .view-contact{
+    label{
+        white-space: nowrap;
+        min-width: 10rem;
+    }
+    .input-search{
+        position: relative;
+        width: 60%;
+        .icon{
+            position: absolute;
+            top: 27%;
+            right: 0.5rem;
+            display: flex
+        }
+    }
+    .input-group-append button{
+        width: 5rem;
+        display: flex;
+        justify-content: center;
+    }
+    .form-control-select{
+        width: 58%;
+    }
+    
+    .link-btn{
+        display: flex;
+        margin-left: auto;
+        margin-top: 1rem;
+    }
+ }
+}

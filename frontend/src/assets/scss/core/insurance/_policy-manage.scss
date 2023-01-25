@@ -1,0 +1,429 @@
+.policy-manage-content{
+    .view-dropdown{
+        label{
+            min-width: 7rem;
+        }
+    }
+    .view-policy-table{
+        padding: 2rem;
+        label{
+            min-width: unset;
+        }
+        .rdt_TableCol:last-child{
+            .rdt_TableCol_Sortable{
+                justify-content: center !important;
+                .asc, .desc{
+                   display: none;
+                }
+            }
+        }
+        .sc-crHmcD{
+            overflow: unset !important;
+        }
+        // [id*="cell-1-"]{
+        //     display: flex;
+        //     justify-content: center;
+        // }
+        [id*="cell-6-"]{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .cover-edit{
+        .form-control-wrap{
+            width: fit-content;
+            justify-content: unset;
+        }
+        .invalid{
+            margin-right: 1rem;
+        }
+    }
+    .mana-optiontype-collapse{
+        background-color: $blue;
+    }
+    .optiontype-edit{
+        .selectmem-label{
+            margin-right: 5rem;
+        }
+        .checkbox-group{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .checkbox-item{
+                width: 33%;
+            }
+        }
+    }
+    .policy-manage{
+        margin: 1rem;
+        .btn-group{
+            margin-left: 1rem;
+            justify-content: flex-start;
+            .form-group + .form-group{
+                margin-left:1rem;
+            }
+        }
+    }
+    .policy-detail{
+        padding: 1rem;
+        border-bottom: 2px solid $border-color;
+        .paying-schedule{
+            margin-bottom: 1.25rem;
+        }
+        .isact-check input{
+            position: relative;
+            margin-top: 0;
+        }   
+        .form-one{
+            .form-group{
+                width: 33%;
+                .form-control-wrap{
+                    width: 100%;
+                }
+                .paying-schedule-label{
+                    min-width: 7rem;
+                }
+                .form-control-select, .policy-name{
+                    width: 80%;
+                }    
+            }
+        }
+        .form-two{
+            .file-upload{
+                margin-left: 20%;
+            }
+            margin-bottom: 1.25rem;
+        }
+        .form-three{
+            .module-items{
+                margin-left: 1.25rem;
+                button{
+                    padding: 0.2rem 0.6rem;
+                    border-radius: 25px;
+                    font-size: 0.8rem;
+                }
+                button + button {
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+    .module-info{
+        padding: 1rem;
+        h3{
+            padding: 1rem 0;
+            font-size: 1.5rem;
+        }
+        .option-count{
+            align-items: center;
+        }
+        .number-spinner-wrap{
+            display: flex;
+            width: 8rem;
+            margin-left: 3rem;
+            input{
+                width: 9rem;
+            }
+            button{
+                position: relative;
+            }
+        }
+        .premium-option + .premium-option{
+            margin-top: 2rem;
+        }
+    }
+    .option-title{
+        width: fit-content;
+        padding: 0.5rem;
+        font-size: 1rem;
+        color: $accent-color;
+        border-bottom: 2px solid $accent-color;
+    }
+    .plan{
+        .ni-plus-round::before{
+            font-size: 1.4rem;
+        }
+        .plan-head{
+            display: flex;
+            padding: 0.5rem;
+            align-items: center;
+            background-color: $border-color;
+            .plus-btn{
+                visibility: hidden;
+            }
+            .form-control-select{
+                width: 15rem;
+            }
+            
+        }
+        .plan-head-group{
+            .plan-head:last-child{
+                .plus-btn{
+                    visibility: visible;
+                }    
+            }
+        } 
+        .plan-head + .plan-head{
+            margin-top: 0.3rem;
+        }
+        .plan-head-content{
+            width: 100%;
+            margin-left: 3%;
+            justify-content: space-between;
+        }
+        .plan-amount-group{
+            .plan-amount:last-child{
+                .plus-btn{
+                    visibility: visible;
+                }
+            }    
+            .amount-input{
+                width: 8rem;
+            }
+        }
+        .plan-amount{
+            display: flex;
+            padding: 0.5rem;
+            align-items: center;
+            border: 1px solid $border-color;
+            .plus-btn{
+                visibility: hidden;
+            }
+        }
+        .plan-amount-content{
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            .id{
+                display: flex;
+                width: 2rem;
+                height: 1.7rem;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid $border-color;
+                border-radius: 5px;
+            }
+        }
+        .form-group{
+            margin-bottom: 0;
+        }
+    }
+    .alert{
+        width: 50%;
+        margin: 2rem auto;
+        .icon{
+            top: 35%;
+        }
+    }
+    .policy-mana-nav{
+        align-items: center;
+        .menu{
+            padding-top: 2rem;
+            margin-bottom: 1rem;
+            margin-left: auto;
+        }
+    }
+    label{
+        white-space: nowrap;
+        min-width: 5rem;
+    }
+    .form-control-wrap{
+        justify-content: space-between;
+    }
+    table{
+        th{
+            white-space: nowrap;
+        }
+        .tb-tnx-desc{
+            white-space: unset;
+            width: unset;
+        }
+        .tb-tnx-amount{
+            white-space: nowrap;
+        }
+    }
+    
+}
+
+.preview-modal{
+    width: 60%;
+    .modal-body{
+        margin: 2rem;
+        border: 1px solid $border-color;
+        border-radius: 10px;
+    }
+    .info-part{
+        padding: 1rem 2rem;
+        border: 1px solid $border-color;
+        background-color: #f3f4f6;
+        border-radius: 10px;
+        box-shadow: 0px 1px 3px 0px rgba($black, 0.4);
+        h4{
+            display: flex;
+            justify-content: center;
+            font-size: 1.1rem;
+            text-decoration: underline;
+        }
+        p{
+            margin-bottom: 0.3rem;
+        }
+        .option-num-label{
+            width: unset !important;
+            min-width: unset !important;
+            padding-right: 0.3rem;
+        }
+    }
+    .declaration-txt{
+        height: 30rem;
+        overflow-y: scroll;
+    }
+    .info-part + .info-part{
+        margin-top: 1rem;
+    }
+    .item{
+        p{
+            margin-bottom: 0.5rem;
+        }
+        .txt{
+            font-weight: bold;
+        }
+    }
+    .btn-group{
+        display: flex;
+        justify-content: flex-end;
+        .form-group + .form-group{
+            margin-left: 1rem;
+        }
+        button{
+            padding: 0.4rem 1rem;
+        }
+    }
+}
+.price-filter{
+    position: relative;
+    align-items: center;
+    .form-range-slider{
+        width: 50%;
+    }
+}
+.filter-range{
+    .form-range-slider{
+        width: 80%;
+    }
+}
+.view-allpolicy-table{
+    // [id*="cell-1-"]{
+    //     max-width: 4rem;
+    //     padding: 0;
+    // }
+    [id*="cell-8-"]{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.policy-view-page{
+    .form-control-select{
+        width: 9rem;
+    }
+}
+
+.view-policy-content{
+    padding: 2rem;
+    background-color: white;
+    .policy-info{
+        display: flex;
+        justify-content: center;
+    }
+    .is-alter{
+        display: flex;
+        justify-content: center;
+        width: 50rem;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+    }
+    .sub-group{
+        width: 100%;
+        padding: 1rem;
+        width: 100%;
+        flex-wrap: wrap;
+        label{
+            white-space: nowrap;
+            min-width: 12rem;
+        }
+        .sub-form {
+            justify-content: space-between;
+        }
+        .text-form-wrap{
+            width: 100% !important;
+        }
+        .form-control-wrap{
+            justify-content: space-between;
+            margin-left: auto;
+        }
+        input, .form-control-wrap{
+            width: 75%;
+        }
+        button{
+            display: flex;
+            margin-left: auto;
+        }
+    }
+    .view-allpolicy-table{
+        width: 90%;
+        margin: auto;
+    }
+    .form-check-input{
+        position: relative;
+        margin-left: 1rem;
+        margin-top: 0;
+    }
+}
+
+.reange-value{
+    position: absolute;
+    top: 3rem;
+    left: 26%;
+}
+.filter-drop{
+    .reange-value{
+        top: 4rem;
+        left: 0;
+    }   
+}
+
+
+
+@media only screen and (max-width:1000px){
+    .member-edit{
+        .form-one, .form-two{
+            .form-group{
+                width: 50% !important;
+            }
+        }
+        .form-four{
+            display: block !important;
+            input{
+                margin-left: 0.1rem !important;
+            }
+            label{
+                min-width: fit-content !important;
+                font-size: 0.8rem !important;
+            }
+        }
+    }
+}   
+
+@media only screen and (max-width:800px){
+    .member-edit{
+        .form-one, .form-two, .form-three{
+            .form-group{
+                width: 100% !important;
+                .form-control-wrap{
+                    justify-content: flex-start;
+                }
+            }
+        } 
+    }
+}   

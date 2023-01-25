@@ -1,0 +1,92 @@
+.modal-dialog{
+    max-width: 80%;
+}
+
+table{
+    button{
+        color: $accent-color !important;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        &:focus{
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+        &:hover{
+            color: $accent-500 !important;
+        }
+    }
+}
+
+.Toastify__toast-body > div:last-child{
+    max-width: 14rem;
+    white-space: wrap;
+}
+.dataTables_wrapper{
+    .g-2.row{
+        justify-content: flex-end !important;
+    }
+    button{
+        &:hover{
+            color: $accent-500 !important;
+        }
+    }
+        
+}
+.form-group:last-child{
+    margin-bottom: 1.25rem;
+}
+
+.nation-signup{
+    select, .date-picker{
+        height: 2.8rem;
+    }
+    .form-icon{
+        top: 4px !important;
+    }
+}
+
+.custom-tab{
+    .subnav{
+        padding: 0;
+        
+        .nav-link{
+            padding: 1rem 1.5rem;
+            &:after{    
+                display: none;
+            }
+            .icon{
+                &::before{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .active.nav-link{
+            background-color: #d7e3fb;
+        }
+     }
+}
+@media only screen and (max-width:820px){
+    h3{
+        font-size: 1.1rem !important;
+    }
+    h4{
+        font-size: 1rem !important;
+    }
+    table{
+        margin: 1rem 0 !important;
+    }
+    label{
+        font-size: 0.8rem !important;
+        min-width: 8rem !important;
+    }
+    input, select{
+        width: 8rem !important;
+    }
+    button{
+        padding: 0.3rem !important;
+        font-size: 0.8rem !important;
+    }
+}
+
